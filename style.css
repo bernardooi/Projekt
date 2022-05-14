@@ -1,0 +1,161 @@
+*
+{
+    margin: 0;
+    padding:0;
+}
+
+/* header*/
+#header
+{
+    text-align: center;
+    height: 12.5vh;
+    width: 100vw;
+    float: left;
+    
+}
+#loginbutton
+{
+    float:left;
+    width: 10vw;
+    height: 100%;
+    display: inline;
+}
+
+a:hover{
+    background-color: lightgrey;
+    text-decoration: none;
+}
+#login
+{
+    float:right;
+    width:10vw;
+    height: 12.5vh;
+    display: inline;
+    color: black;
+    
+}
+#button{
+    margin-top:3.5vh;
+}
+#Title{
+display:inline;
+}
+
+#WebTitle{
+    width: 10vw;
+    height: 10vh;
+    margin-left:-5%;
+    display: inline;
+    position:absolute;
+    float: left;
+}
+
+/* Öppna stänga sideNav*/
+#Open
+{
+    display: inline;
+    color:black;
+    float:left
+}
+#Close
+{
+    color:black;
+    float:left;
+}
+
+
+#sidenav
+{
+    float:left;
+    height: 87.5vh;
+    width:0;    
+}
+.sidenavButtons{
+    display: inline;
+    color: black;
+}
+
+/* FORM */
+.skriv{ 
+    width: 15vw;
+    height: 5vh;
+    float:right;
+    font-size:150%;
+}
+#send
+{
+    height: 5vh;
+    width: 3vw;
+    float:right;
+}
+
+#content
+{
+    width: 80vw;
+    height: 90vh;
+    float:right;
+    display: inline;
+    
+}
+#formlayout
+{
+    width: 25vw;
+    height: 40vh;
+float:left;
+
+}
+#formen
+{
+    margin-left:15vw;
+    margin-top: 5vh;
+    padding-top:5vh;
+    float:left;
+    height:30vh;
+    width: 25vw;
+    background-color: #f8f9fa;
+}
+#check{
+    width:2vw;
+    height: 2vh;
+    margin-right:1vw;
+    display:inline;
+}
+#agree{
+    float:right;
+    display:inline;
+}
+.agree{
+    float:right;
+    display:inline;
+
+}
+.formNames{
+    display:inline;
+    margin-right:2vw;
+}
+/* */
+#div1
+{
+    width: 100%;
+    height: 10vh;
+}
+#div2
+{
+width: 100%;
+height: 40vh;
+float:left;
+
+}
+#div3
+{
+width:80vw;
+height: 20vh;
+float:left;
+}
+#signup 
+{
+    width: 3vw;
+    height: 5vh;
+    background-color: lightgrey;
+
+}
