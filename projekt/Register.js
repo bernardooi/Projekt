@@ -1,8 +1,6 @@
 $( document ).ready(function() {
     $("#send").attr("disabled", true);
-    $(".switch").hide();
-    $("#toggleTheme").hide();
-    $(".sliderThing").hide();
+
 });
 
 
@@ -18,6 +16,8 @@ function OpenSideNav()
     $(".switch").show();
     $("#toggleTheme").show();
     $(".sliderThing").show();
+    $(".sidenavbuttonDiv").css("width","15vw");
+    $("#switchTitle").Text("Dark Mode");
 }
 
 function CloseSideNav()
@@ -31,6 +31,8 @@ function CloseSideNav()
     $(".switch").hide();
     $("#toggleTheme").hide();
     $(".sliderThing").hide();
+    $(".sidenavbuttonDiv").css("width","0");
+    $("#switchTitle").text("");
 }
 
 //Register
@@ -50,7 +52,6 @@ function CheckPass()
 
         if(pass1 == pass2)
         {
-            alert("rererere");
             $("#send").attr("disabled", false);
         }
 }

@@ -1,4 +1,15 @@
 <?php
+error_reporting(0);
+session_start();
+if($_COOKIE["theme"] == "dark")
+{
+    $background ="#1b1d1e";
+    $color ="#fff";
+}
+else{
+    $background ="#f1f1f1";
+    $color="#1b1d1e";
+}
 
 ?>
 <!DOCTYPE html>
@@ -14,34 +25,37 @@
 </head>
 <body>
 
-    <div id="header" class="bg-light border">
+    <div id="header" style="background-color:<?php echo $background?>;">
         
         <div id="WebTitle">
-    <a href="nyaIndex.php"><img src="Images/Books.png" alt="" id="Title"></a>
+    <a href="index.php"><img src="Images/Books.png" alt="" id="Title"></a>
         </div>
         <a href="login.php" id="login">
             <div id="loginbutton" class="border-right border-left">
-                <h2 id="button">Sign in</h2>
+                <h2 id="button"style="color:<?php echo $color?>;">Sign in</h2>
             </div>
         </a>
     </div>
 
-    <div id="sidenav" class="bg-light border">
+    <div id="sidenav" style="background-color:<?php echo $background?>;">
  
-    <a href="nyaIndex.php" class="sidenav_a" ><h2 class="sidenavButtons" id="home"></h2></a>
-    <a href="profile.php" class="sidenav_a" ><h2 class="sidenavButtons" id="Profile"></h2></a>
-    <a href="" class="sidenav_a" ><h2 class="sidenavButtons" id="TopBooks"> </h2></a>
-    <label class="switch">
-
-					<input type="checkbox" id="toggleTheme" >
-					<span class="slider round"></span>
-				</label>
+    <a href="index.php" class="sidenav_a" ><div class="sidenavbuttonDiv"><h2 class="sidenavButtons" id="home"style="color:<?php echo $color?>;" ></h2></div></a>
+    <a href="profile.php" class="sidenav_a" ><div class="sidenavbuttonDiv"><h2 class="sidenavButtons" id="Profile"style="color:<?php echo $color?>;"></h2></div></a>
+    <a href="TopBooks.php" class="sidenav_a" ><div class="sidenavbuttonDiv"><h2 class="sidenavButtons" id="TopBooks"style="color:<?php echo $color?>;"></h2></div></a>
+    
     </div>
     <h1 id="Open" onclick="OpenSideNav()">></h1>
     <h1 id="Close" onclick="CloseSideNav()"></h1>
     
+    <div id="profileLayout"></div>
 
-    <script src="script.js">
+    <footer style="background-color:<?php echo $background?>;">   <div id="switchbox">
+        <label class="switch">
+    <input type="checkbox" id="toggleTheme" >
+    <span class="slider round"></span>
+    </label></div></footer>
+    
+    <script src="sideNav.js">
 
     </script>
 </body>

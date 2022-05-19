@@ -1,0 +1,21 @@
+#featured{
+    width: 50vw;
+    margin-left: 5vw;
+position: relative;
+}
+#box
+{
+    width: 60vw;
+    height: 60vh;
+    margin-left:20vw;
+    padding-top: 10vh;
+    float:left;
+    position: relative;
+}
+#boxed
+{
+    position: relative;
+    width:60vw ;
+    height: 46vh;
+  
+}

@@ -40,22 +40,28 @@ body{
 #sidenav
 {
     float:left;
-    height: 87.5vh;
+    height: 80vh;
     width:0;    
 }
 .sidenavButtons{
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
+    padding-top:2.5vh;
 }
-.sidenavButtons:hover{
+
+.sidenavbuttonDiv:hover{
     background-color: lightgrey;
 }
 .sidenav_a:hover
 {
     text-decoration: none;
 }
+.sidenavbuttonDiv{
+    width:0;
+    height: 10vh;
+    text-align: center;
+    margin-bottom: 5vh;
+
+}
+
 /*switch för dark mode*/
 .switch {
     position: relative;
