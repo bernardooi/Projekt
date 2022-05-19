@@ -1,5 +1,5 @@
 <?php
-if($_COOKIE["theme"] == "dark")
+/*if($_COOKIE["theme"] == "dark")
 {
     $background ="#1b1d1e";
     $color ="#fff";
@@ -8,7 +8,7 @@ else{
     $background ="#f1f1f1";
     $color="#1b1d1e";
 }
-
+*/
 
 
 
@@ -65,23 +65,24 @@ if(isset($_POST["skicka"]))
 </head>
 <body>
 <div id="header" class="bg-light border">
+
         <div id="WebTitle">
-            <h1 id="Title">Books</h1>
+        <a href="nyaIndex.php"><img src="Images/Books.png" alt="" id="Title"></a>
         </div>
 </div>
 
     <div id="sidenav" class="bg-light border">
         
    <a href="nyaIndex.php" class="sidenav_a"  ><h2 class="sidenavButtons" id="home"></h2></a>
-   <a href="" class="sidenav_a"  ><h2 class="sidenavButtons"> </h2></a>
-   <a href="" class="sidenav_a"  ><h2 class="sidenavButtons"> </h2></a>
+   <a href="profile.php" class="sidenav_a"  ><h2 class="sidenavButtons" id="Profile"> </h2></a>
+   <a href="" class="sidenav_a"  ><h2 class="sidenavButtons" id="TopBooks"> </h2></a>
    <label class="switch">
 					<input type="checkbox" id="toggleTheme" >
 					<span class="slider round"></span>
 				</label>
    </div>
-   <h1 id="Open" onclick="OpenSideNav()">></h1>
-   <h1 id="Close" onclick="CloseSideNav()"></h1>
+   <a href="javascript:void(0)"><h1 id="Open" onclick="OpenSideNav()">></h1></a>
+    <a href="javascript:void(0)"><h1 id="Close" onclick="CloseSideNav()"></h1></a>
    
     <div id="content">
         <div id="spacediv">

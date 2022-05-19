@@ -28,7 +28,7 @@
 
     <div id="sidenav" class="bg-light border">
  
-    <a href="nyaIndex.php" class="sidenav_a" ><h2 class="sidenavButtons" id="home" style=""></h2></a>
+    <a href="nyaIndex.php" class="sidenav_a" ><h2 class="sidenavButtons" id="home"></h2></a>
     <a href="profile.php" class="sidenav_a" ><h2 class="sidenavButtons" id="Profile"></h2></a>
     <a href="" class="sidenav_a" ><h2 class="sidenavButtons" id="TopBooks"> </h2></a>
     <label class="switch">
@@ -37,8 +37,8 @@
 					<span class="slider round"></span>
 				</label>
     </div>
-    <a href="javascript:void(0)"><h1 id="Open" onclick="OpenSideNav()">></h1></a>
-    <a href="javascript:void(0)"><h1 id="Close" onclick="CloseSideNav()"></h1></a>
+    <h1 id="Open" onclick="OpenSideNav()">></h1>
+    <h1 id="Close" onclick="CloseSideNav()"></h1>
     
 
     <script src="script.js">

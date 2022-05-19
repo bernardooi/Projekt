@@ -5,7 +5,7 @@
 }
 
 body{
-    background:url(randombs.jpg);
+    background:url(Images/randombs.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -38,11 +38,7 @@ body{
     margin-top:3.5vh;
     font-size: 3vh;
     font-weight: bold;
-}
-#Title{
-display:inline;
-font-size: 5vh;
-}
+}   
 #WebTitle{
     width: 10vw;
     height: 10vh;
@@ -51,7 +47,10 @@ font-size: 5vh;
     position:absolute;
     float: left;
 }
-
+#Title{
+    margin-top:2vh ;
+    size: 150%;
+}
 /* Öppna stänga sideNav*/
 #Open
 {
@@ -71,9 +70,13 @@ font-size: 5vh;
     width:0;    
 }
 .sidenavButtons{
-    display: inline;
+    display: block;
     color: black;
+    text-align: center;
     text-decoration: none;
+}
+.sidenavButtons:hover{
+    background-color: lightgrey;
 }
 .sidenav_a:hover
 {
